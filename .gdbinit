@@ -1166,9 +1166,9 @@ class Source(Dashboard.Module):
         self.offset = 0
 
     def label(self):
-        label = 'Source'
+        label = 'Source showpath={},filename={}'.format(self.show_path,self.file_name)
         if self.show_path and self.file_name:
-            label += ': {}'.format(self.file_name)
+            label += 'here is file name: {}'.format(self.file_name)
         return label
 
     def lines(self, term_width, term_height, style_changed):
